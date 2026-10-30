@@ -23,7 +23,7 @@ jobs:
         run: uv sync --frozen
 
       - name: Build exe
-        run: uv run --with pyinstaller pyinstaller --onefile --name yt-download yt_download.py
+        run: uv run --with pyinstaller pyinstaller --onefile --name yt-download main.py
 
       - name: Fetch ffmpeg
         shell: pwsh
